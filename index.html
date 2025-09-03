@@ -15,8 +15,11 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      /* DARK THEME BACKGROUND */
+      background: linear-gradient(135deg, #232526 0%, #3a3a41 100%);
       font-family: 'Montserrat', sans-serif;
+      color: #e9ecef;
+      transition: background 0.3s;
     }
     .container {
       flex: 1;
@@ -29,14 +32,14 @@
     .name {
       font-family: 'Pacifico', cursive;
       font-size: 4rem;
-      color: #22223b;
+      color: #e9ecef;
       letter-spacing: 0.1em;
       opacity: 0;
       transform: translateY(40px) scale(0.95);
       animation: fadeInUp 2.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
       animation-delay: 0.5s;
-      text-shadow: 2px 4px 30px #fcb69f, 0 2px 8px #22223b77;
-      background: linear-gradient(90deg, #ff758c 0%, #ff7eb3 100%);
+      text-shadow: 2px 4px 30px #232526, 0 2px 8px #00000077;
+      background: linear-gradient(90deg, #ff758c 0%, #7f53ac 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -52,12 +55,13 @@
       width: 100vw;
       text-align: center;
       padding: 20px 0;
-      background: rgba(34, 34, 59, 0.08);
+      background: rgba(34, 34, 59, 0.15);
       font-size: 1.2rem;
       letter-spacing: 0.05em;
-      color: #22223b;
+      color: #e9ecef;
       font-family: 'Montserrat', sans-serif;
       position: relative;
+      box-shadow: 0 -2px 16px #23252633;
     }
     .heart {
       color: #ff758c;
