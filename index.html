@@ -5,6 +5,8 @@
   <title>Saurabh Mishra | Landing Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google Fonts for awesome style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -15,7 +17,7 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
       font-family: 'Montserrat', sans-serif;
     }
     .container {
@@ -28,19 +30,20 @@
     }
     .name {
       font-family: 'Pacifico', cursive;
-      font-size: 4rem;
-      color: #22223b;
+      font-size: clamp(2.5rem, 8vw, 4rem);
+      color: #ffffff;
       letter-spacing: 0.1em;
       opacity: 0;
       transform: translateY(40px) scale(0.95);
       animation: fadeInUp 2.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
       animation-delay: 0.5s;
-      text-shadow: 2px 4px 30px #fcb69f, 0 2px 8px #22223b77;
-      background: linear-gradient(90deg, #ff758c 0%, #ff7eb3 100%);
+      text-shadow: 0 0 20px rgba(108, 99, 255, 0.5), 0 0 40px rgba(108, 99, 255, 0.3);
+      background: linear-gradient(90deg, #6c63ff 0%, #a777e3 50%, #6c63ff 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      text-fill-color: transparent;
+      text-align: center;
+      padding: 0 1rem;
     }
     @keyframes fadeInUp {
       to {
@@ -51,19 +54,20 @@
     footer {
       width: 100vw;
       text-align: center;
-      padding: 20px 0;
-      background: rgba(34, 34, 59, 0.08);
-      font-size: 1.2rem;
+      padding: 20px 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      font-size: clamp(1rem, 3vw, 1.2rem);
       letter-spacing: 0.05em;
-      color: #22223b;
+      color: #ffffff;
       font-family: 'Montserrat', sans-serif;
-      position: relative;
+      backdrop-filter: blur(10px);
     }
     .heart {
-      color: #ff758c;
+      color: #6c63ff;
       animation: pulse 1.2s infinite;
       font-size: 1.2em;
       vertical-align: middle;
+      filter: drop-shadow(0 0 5px rgba(108, 99, 255, 0.7));
     }
     @keyframes pulse {
       0%, 100% { transform: scale(1); }
